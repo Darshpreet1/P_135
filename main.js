@@ -1,15 +1,22 @@
+
+
 function setup(){
     canvas = createCanvas(480,500);
-    video = createCapture(VIDEO);
+    video =  createCapture(VIDEO);
     canvas.position(800,100);
-    posenet = ml5.poseNet(video , modelloded)
-    posenet.on("pose",gotposes)
+    posenet = ml5.poseNet(video , modelloded);
+    posenet.on("pose",gotposes);
 }
 
-function draw(){
-    background("grey")
-}
+
 
 function modelloded(){
     console.log("modelloded")
+}
+
+function gotposes(result){
+    if(resultes.length > 0 ){
+        console.log(result);
+        
+    }
 }
