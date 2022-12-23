@@ -15,8 +15,7 @@ function modelloded(){
 }
 
 function gotposes(result){
-    if(resultes.length > 0 ){
+    if(result.length > 0 ){
         console.log(result);
-        
     }
 }
